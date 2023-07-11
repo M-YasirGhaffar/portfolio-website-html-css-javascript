@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Yasir Ghaffar - Web Development Portfolio</title>
 
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/images/professional-portfolio.png">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -130,7 +132,7 @@
         </div>
 
         <div class="skills-set">
-            <div class="progress-div">
+            <div class="progress-div" data-aos="zoom-in">
                 <p>
                     <span>HTML</span><br>
                     <progress value="90" max="100"></progress>
@@ -162,7 +164,7 @@
                     <span>75%</span>
                 </p>
             </div>
-            <div class="progress-div">
+            <div class="progress-div" data-aos="zoom-in">
                 <p>
                     <span>HTML</span><br>
                     <progress value="90" max="100"></progress>
@@ -220,9 +222,9 @@
 
         <div class="contact-form">
             <form action="https://formspree.io/f/mwkdknje" method="post">
-                <input type="text" name="name" placeholder="Your Name*" required>
-                <input type="email" name="email" placeholder="Your Email Address*" required>
-                <textarea name="message" placeholder="Message...*" id="message" cols="30" rows="10" required></textarea>
+                <input type="text" name="name" placeholder="Your Name*" required data-aos="zoom-in-left">
+                <input type="email" name="email" placeholder="Your Email Address*" required data-aos="zoom-in-left">
+                <textarea name="message" placeholder="Message...*" id="message" cols="30" rows="10" required data-aos="zoom-in-left"></textarea>
                 <input type="submit" value="Submit Message" class="submit" required>
             </form>
         </div>
@@ -239,6 +241,17 @@
         </div>
     </footer>
 
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        AOS.init({
+            delay: 100, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+        });
+    </script>
+
 </body>
 </html>
