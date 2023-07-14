@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
 window.addEventListener("scroll", function(){
-    header.classList.toggle("sticky", window.scrollY > 100);
+    header.classList.toggle("sticky", window.scrollY > 10);
 });
 
 let menu = document.querySelector("#menu-icon");
@@ -53,4 +53,32 @@ window.addEventListener('resize', updatePageTitle);
 //       }
 //     });
 //   });
+
+var typed = new Typed('#about-typed-text', {
+    strings: ['Web Developer!', 'Web Designer!', '','Software Engineer!', 'Tech Enthusiast!', 'Eager Learner!' ],
+    typeSpeed: 50,
+    loop: true,
+    hideCursor: true,
+      onComplete: function() {
+    typed.cursor.remove();
+  }
+  });
+
+var typed = new Typed('#home-text-repeat', {
+    strings: ['A Web Developer!', 'Software Engineer!'],
+    typeSpeed: 50,
+    loop: true,
+    hideCursor: true,
+      onComplete: function() {
+    typed.cursor.remove();
+  }
+  });
   
+
+  
+//   AOS.init({
+//     // offset: 20,
+//     // disableMutationObserver: true,
+//     delay: 10, // values from 0 to 3000, with step 50ms
+//     duration: 1000, // values from 0 to 3000, with step 50ms
+//   });
